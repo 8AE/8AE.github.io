@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="8AE — open-source games, mods, and tabletop tools." />
+    <title>8AE — Open-source builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="8AE home">8AE<span>_</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/8AE" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <p class="eyebrow reveal">Independent developer / open source</p>
+        <h1 class="reveal delay-1">I make playful<br /><em>things that work.</em></h1>
+        <div class="hero-bottom reveal delay-2">
+          <p>Games, multiplayer mods, and tools for bringing people together around a screen.</p>
+          <a class="circle-link" href="#projects">Explore work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="signal" aria-hidden="true"><span></span><span></span><span></span> Building in public</div>
+      </section>
+
+      <section class="projects wrap" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work / 04</p>
+          <h2 id="projects-heading">Projects with<br />a little spark.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="card-visual pokemon-visual" aria-hidden="true">
+              <div class="poke-glow"></div><div class="poke-ball"><i></i></div>
+              <p>WHO'S THAT<br /><strong>POKÉMON?</strong></p>
+              <span class="visual-label">Web game / PokeAPI</span>
+            </div>
+            <div class="card-copy">
+              <div><p class="number">01</p><h3>Who’s That Pokémon?</h3></div>
+              <p class="description">A bite-sized guessing game where a Pokémon’s base stats and type are your only clues. The data comes live from PokéAPI.</p>
+              <div class="card-links"><a href="https://8ae.github.io/whos_that_pokemon/" target="_blank" rel="noreferrer">Play the game <span>↗</span></a><a class="muted-link" href="https://github.com/8AE/whos_that_pokemon" target="_blank" rel="noreferrer">Source</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="card-visual anchor-visual" aria-hidden="true"><div class="anchor-mark">⚓</div><div class="sync-line"></div><span class="visual-label">Multiplayer mod</span></div>
+            <div class="card-copy">
+              <div><p class="number">02</p><h3>MNSG Anchor</h3></div>
+              <p class="description">A multiplayer client for Mystical Ninja Starring Goemon: Recompiled. Keeps a team in sync—items, flags, health, ryo, and more.</p>
+              <a href="https://github.com/8AE/mnsg-anchor" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="card-visual fish-visual" aria-hidden="true"><div class="bubbles"><i></i><i></i><i></i></div><div class="fish">◖<span>•</span></div><span class="visual-label">Game mod</span></div>
+            <div class="card-copy">
+              <div><p class="number">03</p><h3>Custom Fish</h3></div>
+              <p class="description">A quality-of-life mod for MNSG Recompiled that lets players tune the fish thresholds needed to advance Ushiwaka’s fishing quest.</p>
+              <a href="https://github.com/8AE/mnsg-custom-fish" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card wide reveal">
+            <div class="card-visual table-visual" aria-hidden="true"><div class="grid-lines"></div><div class="token token-one"></div><div class="token token-two"></div><div class="token token-three"></div><span class="visual-label">Tabletop toolkit</span></div>
+            <div class="card-copy">
+              <div><p class="number">04</p><h3>Tableforge</h3></div>
+              <p class="description">A browser-based Dungeons & Dragons table display with synchronized DM and player views. Build boards, place tokens, reveal maps, and run the table from one host.</p>
+              <a href="https://github.com/8AE/tableforge" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap"><p>Made with curiosity by <a href="https://github.com/8AE" target="_blank" rel="noreferrer">8AE</a>.</p><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
