@@ -3,88 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="8AE — open-source games, mods, and tabletop tools." />
-    <title>8AE — Open-source builder</title>
+    <meta name="description" content="Ahmad El-Baba (8AE) — software engineer building open-source games, mods, and tabletop tools." />
+    <meta name="color-scheme" content="dark" />
+    <title>8AE — Ahmad El-Baba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/1683482?v=4" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="orb orb-one" aria-hidden="true"></div>
-    <div class="orb orb-two" aria-hidden="true"></div>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
 
-    <header class="site-header wrap">
-      <a class="wordmark" href="#top" aria-label="8AE home">8AE<span>_</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/8AE" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero wrap">
-        <p class="eyebrow reveal">Independent developer / open source</p>
-        <h1 class="reveal delay-1">I make playful<br /><em>things that work.</em></h1>
-        <div class="hero-bottom reveal delay-2">
-          <p>Games, multiplayer mods, and tools for bringing people together around a screen.</p>
-          <a class="circle-link" href="#projects">Explore work <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="signal" aria-hidden="true"><span></span><span></span><span></span> Building in public</div>
-      </section>
-
-      <section class="projects wrap" id="projects" aria-labelledby="projects-heading">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected work / 04</p>
-          <h2 id="projects-heading">Projects with<br />a little spark.</h2>
+    <div class="layout">
+      <!-- ============ Left: profile ============ -->
+      <aside class="profile reveal">
+        <div class="avatar-ring">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/1683482?v=4" alt="Ahmad El-Baba's GitHub profile picture" width="180" height="180" />
         </div>
 
-        <div class="project-grid">
-          <article class="project-card featured reveal">
-            <div class="card-visual pokemon-visual" aria-hidden="true">
-              <div class="poke-glow"></div><div class="poke-ball"><i></i></div>
-              <p>WHO'S THAT<br /><strong>POKÉMON?</strong></p>
-              <span class="visual-label">Web game / PokeAPI</span>
+        <h1>Ahmad El&#8209;Baba</h1>
+        <p class="handle"><a href="https://github.com/8AE" target="_blank" rel="noreferrer">@8AE</a></p>
+
+        <div class="about">
+          <h2>About me</h2>
+          <p>Software engineer at GE Appliances by day — indie tinkerer by night. I build playful open-source things: web games, multiplayer mods for N64 recompilations, and tools for running tabletop games around a screen.</p>
+          <p>Everything here is built in public. Poke around, play something, or open an issue.</p>
+        </div>
+
+        <div class="profile-actions">
+          <a class="btn" href="https://github.com/8AE" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            GitHub profile
+          </a>
+        </div>
+
+        <p class="foot">Building in public <span class="pulse" aria-hidden="true"></span></p>
+      </aside>
+
+      <!-- ============ Right: projects ============ -->
+      <main class="projects" aria-labelledby="projects-heading">
+        <header class="projects-header reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-heading">Projects</h2>
+        </header>
+
+        <div class="card-stack">
+          <!-- Who's That Pokémon -->
+          <article class="card reveal">
+            <div class="card-icon icon-pokemon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h6"/><path d="M15 12h6"/><circle cx="12" cy="12" r="3"/></svg>
             </div>
-            <div class="card-copy">
-              <div><p class="number">01</p><h3>Who’s That Pokémon?</h3></div>
-              <p class="description">A bite-sized guessing game where a Pokémon’s base stats and type are your only clues. The data comes live from PokéAPI.</p>
-              <div class="card-links"><a href="https://8ae.github.io/whos_that_pokemon/" target="_blank" rel="noreferrer">Play the game <span>↗</span></a><a class="muted-link" href="https://github.com/8AE/whos_that_pokemon" target="_blank" rel="noreferrer">Source</a></div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Who’s That Pokémon?</h3>
+                <div class="card-links">
+                  <a class="icon-btn" href="https://github.com/8AE/whos_that_pokemon" target="_blank" rel="noreferrer" aria-label="Who's That Pokémon on GitHub" title="Source on GitHub">
+                    <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                  </a>
+                  <a class="icon-btn icon-btn-live" href="https://8ae.github.io/whos_that_pokemon/" target="_blank" rel="noreferrer" aria-label="Play Who's That Pokémon" title="Play the live site">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="tag">Web game · PokéAPI <span class="live-dot" aria-hidden="true"></span><span class="live-label">Live</span></p>
+              <p class="desc">A bite-sized guessing game where a Pokémon’s base stats and type are your only clues. Data comes live from PokéAPI.</p>
             </div>
           </article>
 
-          <article class="project-card reveal delay-1">
-            <div class="card-visual anchor-visual" aria-hidden="true"><div class="anchor-mark">⚓</div><div class="sync-line"></div><span class="visual-label">Multiplayer mod</span></div>
-            <div class="card-copy">
-              <div><p class="number">02</p><h3>MNSG Anchor</h3></div>
-              <p class="description">A multiplayer client for Mystical Ninja Starring Goemon: Recompiled. Keeps a team in sync—items, flags, health, ryo, and more.</p>
-              <a href="https://github.com/8AE/mnsg-anchor" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+          <!-- MNSG Anchor -->
+          <article class="card reveal">
+            <div class="card-icon icon-anchor" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v13"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>MNSG Anchor</h3>
+                <div class="card-links">
+                  <a class="icon-btn" href="https://github.com/8AE/mnsg-anchor" target="_blank" rel="noreferrer" aria-label="MNSG Anchor on GitHub" title="Source on GitHub">
+                    <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="tag">Multiplayer mod · C</p>
+              <p class="desc">A multiplayer client for Mystical Ninja Starring Goemon: Recompiled. Keeps a whole team in sync — items, flags, health, ryo, and more.</p>
             </div>
           </article>
 
-          <article class="project-card reveal delay-2">
-            <div class="card-visual fish-visual" aria-hidden="true"><div class="bubbles"><i></i><i></i><i></i></div><div class="fish">◖<span>•</span></div><span class="visual-label">Game mod</span></div>
-            <div class="card-copy">
-              <div><p class="number">03</p><h3>Custom Fish</h3></div>
-              <p class="description">A quality-of-life mod for MNSG Recompiled that lets players tune the fish thresholds needed to advance Ushiwaka’s fishing quest.</p>
-              <a href="https://github.com/8AE/mnsg-custom-fish" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+          <!-- Custom Fish -->
+          <article class="card reveal">
+            <div class="card-icon icon-fish" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12c2-3.5 5.5-5.5 10-5.5 1.5 2 1.5 9 0 11-4.5 0-8-2-10-5.5Z"/><path d="M6.5 12 2 8.5c.5 2 .5 5 0 7L6.5 12Z"/><circle cx="14" cy="10.5" r=".5" fill="currentColor"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Custom Fish</h3>
+                <div class="card-links">
+                  <a class="icon-btn" href="https://github.com/8AE/mnsg-custom-fish" target="_blank" rel="noreferrer" aria-label="Custom Fish on GitHub" title="Source on GitHub">
+                    <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="tag">Game mod · C</p>
+              <p class="desc">A quality-of-life mod for MNSG Recompiled that lets players tune the fish thresholds needed to advance Ushiwaka’s fishing quest.</p>
             </div>
           </article>
 
-          <article class="project-card wide reveal">
-            <div class="card-visual table-visual" aria-hidden="true"><div class="grid-lines"></div><div class="token token-one"></div><div class="token token-two"></div><div class="token token-three"></div><span class="visual-label">Tabletop toolkit</span></div>
-            <div class="card-copy">
-              <div><p class="number">04</p><h3>Tableforge</h3></div>
-              <p class="description">A browser-based Dungeons & Dragons table display with synchronized DM and player views. Build boards, place tokens, reveal maps, and run the table from one host.</p>
-              <a href="https://github.com/8AE/tableforge" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+          <!-- Tableforge -->
+          <article class="card reveal">
+            <div class="card-icon icon-table" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Tableforge</h3>
+                <div class="card-links">
+                  <a class="icon-btn" href="https://github.com/8AE/tableforge" target="_blank" rel="noreferrer" aria-label="Tableforge on GitHub" title="Source on GitHub">
+                    <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="tag">Tabletop toolkit · JavaScript</p>
+              <p class="desc">A browser-based D&amp;D table display with synchronized DM and player views. Build boards, place tokens, reveal maps, and run the table from one host.</p>
             </div>
           </article>
         </div>
-      </section>
-    </main>
 
-    <footer class="wrap"><p>Made with curiosity by <a href="https://github.com/8AE" target="_blank" rel="noreferrer">8AE</a>.</p><a href="#top">Back to top ↑</a></footer>
+        <footer class="reveal">
+          <p>Made with curiosity by <a href="https://github.com/8AE" target="_blank" rel="noreferrer">8AE</a>.</p>
+        </footer>
+      </main>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
